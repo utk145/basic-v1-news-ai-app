@@ -1,0 +1,36 @@
+// intent('Get the news from $(item* (.*)) category', (p) => {
+//     if(p.item.value){
+//         p.play({ command: 'VoiceNews', data: p.item.value });
+//         p.play(`Fetching News on ${p.item.value} category`);
+//     }
+//     else{
+//         p.play(`Cannot get Data`);
+//     }
+// })
+
+
+intent('Open', (p) => {
+  p.play('I can assist you in fetching news, say: get the news');
+});
+
+intent('Get the news', (p) => {
+    p.play(`Sure, which category would you like to fetch news from?`);
+});
+intent('$(category* (.*))', (p) => {
+    if (p.category.value) {
+        p.play({ command: 'VoiceNews', data: p.category.value });
+        p.play(`Fetching news from the ${p.category.value} category`);
+    } else {
+        p.play(`Sorry, I didn't catch the category. Please try again.`);
+    }
+});
+
+intent('Get the news from $(item* (.*)) category', (p) => {
+    if(p.item.value){
+        p.play({ command: 'VoiceNews', data: p.item.value });
+        p.play(`Fetching News on ${p.item.value} category`);
+    }
+    else{
+        p.play(`Cannot get Data`);
+    }
+})

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.display-news {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.news-content {
+    font-size: 18px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-author,
+.news-date {
+    font-size: 17px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.category {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin-right: 6px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 3px solid #e0e0e0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style the arrow icon */
+select::-ms-expand {
+    display: none;
+}
+
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* .custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 3px solid #e0e0e0;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.custom-dropdown .dropdown-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555555;
+  font-size: 14px;
+}
+
+.custom-dropdown select:focus + .dropdown-arrow {
+  color: #000000;
+} */
+
+
+@media (max-width: 768px) {
+    .display {
+        grid-template-columns: 1fr;
+    }
+}
