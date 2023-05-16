@@ -61,3 +61,5 @@ Welcome to the News AI App! This application utilizes AI-powered voice recogniti
 Suggestions and modifications for better UI/UX and features are appreciated. 
 
 I apologise for not being able to provide the live website as it wasn't being deployed properly on any of the hosting platforms because of some protocol issue. :) 
+
+Do check out the post here: 👉[Here](https://twitter.com/utks1455/status/1658458166441693186)👈 
